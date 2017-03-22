@@ -1,0 +1,32 @@
+<div class="col-md-3 col-sm-3 col-xs-12" th:fragment="clock">
+  <div class="x_panel">
+    <div class="x_title">
+      <h2><i class="fa fa-calendar-check-o"></i> <span class="datecont">April 13, 2016</span></h2>
+      <ul class="nav navbar-right panel_toolbox" th:replace="components/righttoolbox :: right_toolbox">
+      </ul>
+      <div class="clearfix"></div>
+    </div>
+
+    <div class="x_content">
+    	<div class="row">
+    		<div class="col-sm-2">
+    			<i class="fa fa-clock-o fa-4x"></i>
+    		</div>
+    		<div class="col-sm-10">
+    			<canvas id="digiclock" width="224" height="60"></canvas>
+    		</div>
+    	</div>
+    	<div class="col-sm-4">
+			<a id="logtime" class="btn btn-app" style="margin-left: 0;">
+				<i class="fa fa-hourglass-start"></i> Time IN
+			</a>
+    	</div>
+    	<div class="col-sm-8">
+    		<div class="byline">Last logged time:</div>
+    		<p>8:17:22 am <span class="datecont">April 13, 2016</span></p>
+    	</div>
+    </div>
+  </div>
+  
+  <script type="text/javascript" src="js/hourly/digiclock.js"></script>
+</div>
